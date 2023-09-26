@@ -45,6 +45,10 @@ const BaseInput = styled.input`
             box-shadow: none;
             border-bottom: 2px solid ${(props) => props.theme['green-500']};
       }
+
+      &::-webkit-calendar-picker-indicator{
+            display: none !important;
+      }
 `
 
 export const TaskInput = styled(BaseInput)`
