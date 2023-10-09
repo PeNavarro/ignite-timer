@@ -4,14 +4,17 @@ import { ThemeProvider } from 'styled-components'
 
 import { GlobalStyle } from './styles/global.ts'
 import { defaultTheme } from './styles/themes/default.ts'
+import { CyclesContextProvider } from './contexts/CyclesContext.tsx'
 
 function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <BrowserRouter>
-        <Router />
-        <GlobalStyle />
+        <CyclesContextProvider>
+          <Router />
+        </CyclesContextProvider>
       </BrowserRouter>
+      <GlobalStyle />
     </ThemeProvider>
   )
 }
