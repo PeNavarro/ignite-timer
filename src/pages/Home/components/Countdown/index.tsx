@@ -18,7 +18,9 @@ export function Countdown(){
 
             if(activeCycle){
                   interval = setInterval(() => {
-                        const secondsDifference = differenceInSeconds(new Date(), activeCycle.startDate)
+                        const secondsDifference = differenceInSeconds(new Date(), new Date(activeCycle.startDate))
+                        // O segundo parâmetro do differenceInSeconds está dentro do new Date pois 
+                        // ele era recebido como string, agora ele é formatado para data
 
                         if(secondsDifference >= totalSeconds){
                               markCurrentCycleAsFinished()
