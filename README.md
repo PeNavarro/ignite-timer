@@ -1,27 +1,23 @@
-# React + TypeScript + Vite
+# Ignite Timer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+O **Ignite Timer** é uma aplicação simples desenvolvida como parte do bootcamp Ignite, oferecido pela Rocketseat. A aplicação consiste em um cronômetro que permite aos usuários configurar um tempo específico para contagem regressiva.
 
-Currently, two official plugins are available:
+## Funcionalidades Principais
+- **Configuração do Tempo**: Permite aos usuários definirem um tempo específico para a contagem regressiva, com opções de minutos e segundos.
+- **Iniciar, Pausar e Resetar**: Oferece controles para iniciar, pausar e resetar o cronômetro durante a contagem regressiva.
+- **Notificação ao Finalizar**: Após o término da contagem regressiva, a aplicação emite uma notificação sonora para alertar o usuário.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologias Utilizadas
+- **React.js**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **Styled Components**: Biblioteca para estilização de componentes React de forma isolada e reutilizável.
+- **Context API**: Utilizada para gerenciamento de estado da aplicação, permitindo o compartilhamento de dados entre componentes.
+- **React Hook Form**: Utilizado para gerenciar o formulário de configuração do tempo de contagem regressiva.
 
-## Expanding the ESLint configuration
+## Como Executar Localmente
+Para executar a aplicação localmente, siga os passos abaixo:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1. Clone este repositório: `git clone https://github.com/PeNavarro/ignite-timer.git`
+2. Navegue até o diretório do projeto: `cd ignite-timer`
+3. Instale as dependências: `npm install`
+4. Execute a aplicação: `npm start`
+5. Acesse a aplicação em seu navegador: `http://localhost:3000`
